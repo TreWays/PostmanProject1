@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "44cff467-841c-48b5-815d-14565dce22d8",
+		"name": "Postman Project 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30959766"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7174/api/auth",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyYW5kb21AZ21haWwuY29tIiwiZW1haWwiOiJyYW5kb21AZ21haWwuY29tIiwibmJmIjoxNzExNDgxNDcyLCJleHAiOjE3MTE0ODIwNzAsImlhdCI6MTcxMTQ4MTQ3MiwiaXNzIjoiSXNzdWVyIiwiYXVkIjoiQXVkaWVuY2UifQ.L1f9I6BI8GLSdb1hg4Y9eQ66PDxqfpboWMD4m4efqHeqRngkr-KPOroOM86prYzIDPg96RqWAO2yAxlqaVqQqA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"random@gmail.com\",\r\n    \"password\" : \"strongpassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7174/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7174",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7174/api/employee/ByState?state=NJ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7174/api/employee/ByState?state=NJ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7174",
+					"path": [
+						"api",
+						"employee",
+						"ByState"
+					],
+					"query": [
+						{
+							"key": "state",
+							"value": "NJ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:7174/api/employee/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyYW5kb21AZ21haWwuY29tIiwiZW1haWwiOiJyYW5kb21AZ21haWwuY29tIiwibmJmIjoxNzExNDgxNDcyLCJleHAiOjE3MTE0ODIwNzAsImlhdCI6MTcxMTQ4MTQ3MiwiaXNzIjoiSXNzdWVyIiwiYXVkIjoiQXVkaWVuY2UifQ.L1f9I6BI8GLSdb1hg4Y9eQ66PDxqfpboWMD4m4efqHeqRngkr-KPOroOM86prYzIDPg96RqWAO2yAxlqaVqQqA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7174/api/employee/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7174",
+					"path": [
+						"api",
+						"employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:7174/api/employee/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyYW5kb21AZ21haWwuY29tIiwiZW1haWwiOiJyYW5kb21AZ21haWwuY29tIiwibmJmIjoxNzExNDgxNDcyLCJleHAiOjE3MTE0ODIwNzAsImlhdCI6MTcxMTQ4MTQ3MiwiaXNzIjoiSXNzdWVyIiwiYXVkIjoiQXVkaWVuY2UifQ.L1f9I6BI8GLSdb1hg4Y9eQ66PDxqfpboWMD4m4efqHeqRngkr-KPOroOM86prYzIDPg96RqWAO2yAxlqaVqQqA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeID\": 2,\r\n    \"FirstName\": \"James\",\r\n    \"LastName\": \"sad\",\r\n    \"Age\": 30,\r\n    \"State\": \"NY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7174/api/employee/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7174",
+					"path": [
+						"api",
+						"employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:7174/api/employee/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyYW5kb21AZ21haWwuY29tIiwiZW1haWwiOiJyYW5kb21AZ21haWwuY29tIiwibmJmIjoxNzExNDgxNDcyLCJleHAiOjE3MTE0ODIwNzAsImlhdCI6MTcxMTQ4MTQ3MiwiaXNzIjoiSXNzdWVyIiwiYXVkIjoiQXVkaWVuY2UifQ.L1f9I6BI8GLSdb1hg4Y9eQ66PDxqfpboWMD4m4efqHeqRngkr-KPOroOM86prYzIDPg96RqWAO2yAxlqaVqQqA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeID\": 2,\r\n    \"FirstName\": \"James\",\r\n    \"LastName\": \"sad\",\r\n    \"Age\": 30,\r\n    \"State\": \"IL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7174/api/employee/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7174",
+					"path": [
+						"api",
+						"employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "post_id",
+			"value": "50",
+			"type": "string"
+		}
+	]
+}
